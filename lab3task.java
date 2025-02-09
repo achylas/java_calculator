@@ -22,7 +22,7 @@ public class lab3task {
             case '%':
                     result = num1 % num2;
                     break;
-                case '^':
+            case '^':
                     result = Math.pow(num1, num2);
                     break;
             case '+':
