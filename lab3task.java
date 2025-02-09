@@ -14,11 +14,17 @@ public class lab3task {
         System.out.println("Enter second number:");
         double num2 = scanner.nextDouble();
 
-        System.out.println("Choose an operation (+, -, *, /):");
+        System.out.println("Choose an operation (+, -, *, /, % , ^ ):");
         char operation = scanner.next().charAt(0);
 
         double result = 0;
         switch (operation) {
+            case '%':
+                    result = num1 % num2;
+                    break;
+                case '^':
+                    result = Math.pow(num1, num2);
+                    break;
             case '+':
                 result = num1 + num2;
                 break;
